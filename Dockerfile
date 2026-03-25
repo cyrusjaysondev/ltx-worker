@@ -1,6 +1,6 @@
 FROM thankfulcarp/wan2gp-docker:runpod-latest
 
-# Install flash-attn at build time (survives restarts, no runtime compile)
+# Install flash-attn at build time (requires CUDA — build on a GPU machine)
 RUN pip install flash-attn --no-build-isolation
 
 # Install worker dependencies
